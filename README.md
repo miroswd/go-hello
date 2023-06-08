@@ -21,3 +21,19 @@ go build
 ```shell
 ./go-hello
 ```
+
+
+
+## Operators
+
+`=`  -> Assignment operator, for existents variables
+
+`:=` -> Declaration operator
+
+
+eg: 
+
+```go
+x := 10
+x = 20
+```
