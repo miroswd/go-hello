@@ -5,6 +5,7 @@ package main
 import "fmt"
 
 var name = "Miro" // visible to entire package | package level block
+var zzz = 56
 
 func main() {
 	// scope main
@@ -26,10 +27,16 @@ func main() {
 
 	fmt.Printf("result of 10 with x: %v\n", sum);
 
+	isEvenNumber(z)
+}
 
-	isEvenNumber := z % 2 == 0
 
-	fmt.Printf("%v is even number: %v", z, isEvenNumber);
-	
-	
+
+func isEvenNumber (x int){
+	// getting the z variable outside the code block, nobody sees the variable
+	fmt.Println(zzz); // using the package level block
+
+
+	isEvenNumber := x % 2 == 0;
+	fmt.Printf("\n%v is even number: %v", x, isEvenNumber);
 }
