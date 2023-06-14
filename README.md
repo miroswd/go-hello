@@ -45,3 +45,17 @@ x = 20
 
 ## Slice
 > Similar to array but more flexible
+
+The slice has an underlying array, in other words it has a limited length. Array does not add new values, slice does but does not add using a non-existent position.
+
+
+```go
+slice := []int{1,2,3}
+
+slice[3] = 4 // this does not work
+
+slice = append(slice, 4) // this will work
+```
+
+
+
