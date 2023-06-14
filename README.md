@@ -37,3 +37,7 @@ eg:
 x := 10
 x = 20
 ```
+
+
+## Array
+> Only used to improve slice performance 
