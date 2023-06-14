@@ -41,3 +41,7 @@ x = 20
 
 ## Array
 > Only used to improve slice performance 
+
+
+## Slice
+> Similar to array but more flexible
