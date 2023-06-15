@@ -64,3 +64,20 @@ slice = append(slice, 4) // this will work
 ```go
   make([]T, len, cap) // cap -> capacity
 ```
+
+
+## Map
+> Create a list with keys
+
+```go
+	friends := map[string]int{
+			"alfredo": 5551234,
+			"joana": 9996674,
+		}
+
+		fmt.Println(friends["miro"]) // this returns 0, because there is no "miro" in the friends map
+
+		hasFriend, ok := friends["miro"]
+
+    // "ok":bool is used to test for key existence
+  ``` 
