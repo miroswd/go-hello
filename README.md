@@ -58,4 +58,9 @@ slice = append(slice, 4) // this will work
 ```
 
 
+### Make
+> Slice with 10 items but with 50 items of capacity
 
+```go
+  make([]T, len, cap) // cap -> capacity
+```
