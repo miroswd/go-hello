@@ -40,4 +40,15 @@ func main(){
 	fmt.Println(person2)
 	fmt.Println(person3)
 
+	fmt.Println(person1.name)
+	fmt.Println(person2.person.name)
+
+	person4 := person{"Xuxa", 9999}
+
+	fmt.Println(person4)
+
+	person5 := professional{person{"Miro", 23}, "Dev", 1.00}
+
+	fmt.Println(person5)
+
 }
