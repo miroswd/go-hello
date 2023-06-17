@@ -81,3 +81,14 @@ slice = append(slice, 4) // this will work
 
     // "ok":bool is used to test for key existence
   ``` 
+
+
+## Function 
+
+```go
+// the variadic parameter must be the last one
+
+func name(s string, x ...int) (int, string) {
+
+}
+```
