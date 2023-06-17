@@ -4,6 +4,7 @@ import "fmt"
 
 func main(){
 	fmt.Println(fatorial(6))
+	fmt.Println(loops(10))
 }
 
 func fatorial(x int) int {
@@ -15,4 +16,19 @@ func fatorial(x int) int {
 	}
 
 	return total
+}
+
+
+
+func loops(x int) int {
+	
+		total := x;
+
+		for x > 1 {
+			total *= x - 1
+			x--
+		}
+
+		return total;
+
 }
