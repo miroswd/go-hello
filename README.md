@@ -100,3 +100,9 @@ The defer runs on stack first in, first out
 > execute by last
 
 > after running everything
+
+
+## Methods
+> Function attached to a type
+
+Function bound to a type, must be used when it has a context, as it is not possible to call the function directly
