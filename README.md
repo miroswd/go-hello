@@ -92,3 +92,11 @@ func name(s string, x ...int) (int, string) {
 
 }
 ```
+
+## Defer
+
+The defer runs on stack first in, first out
+
+> execute by last
+
+> after running everything
