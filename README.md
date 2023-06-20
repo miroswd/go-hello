@@ -193,3 +193,17 @@ const z = *y // get content of memory address
 
 ## Export
 > In go, everything with a capital first letter is exported and can be imported
+
+
+## Tags Struct
+> Used for DDD => user <> costumer
+
+```go
+type info struct {
+	Name 		string 	`json: "Name"`
+	LastName	string 	`json: "LastName"`
+	Age 		int    	`json: "Age"`
+	Job 		string 	`json: "Profession"`
+	BankAccount float64 `json: "Balance"`
+}
+```
