@@ -189,3 +189,7 @@ const z = *y // get content of memory address
 ```
 
 - We use it when we deal with a large amount of data and we don't want to copy it during the code (in variables, pass it in functions). We leave it in a fixed place in memory and whoever wants to use it can look for the value directly in the memory address
+
+
+## Export
+> In go, everything with a capital first letter is exported and can be imported
