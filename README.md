@@ -177,3 +177,15 @@ The circle and rect struct types both implement the geometry interface so we can
     measure(c)
 }
 ```
+
+
+## Pointers 
+> Stores the memory address
+
+```go
+const x = 10
+const y = &x // get memory address
+const z = *y // get content of memory address 
+```
+
+- We use it when we deal with a large amount of data and we don't want to copy it during the code (in variables, pass it in functions). We leave it in a fixed place in memory and whoever wants to use it can look for the value directly in the memory address
