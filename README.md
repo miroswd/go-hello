@@ -277,3 +277,23 @@ install a package
 go get -u golang.org/x/crypto/bcrypt
 ```
 
+## Go routine and WaitGroups
+Execute independently
+
+```go 
+go any() 
+any()
+```
+- Waiting groups are used to synchronize go routines with code, waiting for all functions to run to close the program (func main)
+
+```go
+import "sync"
+
+var wg sync.WaitGroups
+
+wg.Add(numberOfGoRoutines)
+
+wg.Wait() // wait for all functions to be executed
+
+defer wg.Done() // close the process
+```
