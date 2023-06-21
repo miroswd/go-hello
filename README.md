@@ -207,3 +207,35 @@ type info struct {
 	BankAccount float64 `json: "Balance"`
 }
 ```
+
+
+## Json
+
+### Encoder vs Marshal
+
+- Marshal needs it to store values ​​in a variable to be used later
+
+```go
+user := person{
+    Name: "Miro",
+    Age: 23,
+}
+
+j, err := json.Marshal(user)
+```
+
+- Encoder, sends directly to the interface defined in newEncoder
+
+
+```go
+user := person{
+    Name: "Miro",
+    Age: 23,
+}
+
+encoder := json.NewEncoder(os.Stdout)
+encoder.Encode(user)
+
+// encoder := json.NewEncoder(v interface{})
+// interface is anything
+```
