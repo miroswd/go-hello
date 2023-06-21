@@ -107,7 +107,35 @@ The defer runs on stack first in, first out
 
 Function bound to a type, must be used when it has a context, as it is not possible to call the function directly
 
+### Method chain
+> Create a sequence of methods, function output is used for method input
 
+```go
+type employee struct {
+	name   string
+	age    int
+	salary int
+}
+
+func (e employee) printName() employee {
+	fmt.Printf("Name: %s\n", e.name)
+	return e
+}
+
+func (e employee) printAge() employee {
+	fmt.Printf("Age: %d\n", e.age)
+	return e
+}
+
+func (e employee) printSalary() {
+	fmt.Printf("Salary: %d\n", e.salary)
+}
+
+func main() {
+	emp := employee{name: "Sam", age: 31, salary: 2000}
+	emp.printName().printAge().printSalary()
+}
+```
 
 ## Interface and Polymorphism
 > Run a function based on interface type
@@ -248,3 +276,4 @@ install a package
 ```shell
 go get -u golang.org/x/crypto/bcrypt
 ```
+
