@@ -239,3 +239,12 @@ encoder.Encode(user)
 // encoder := json.NewEncoder(v interface{})
 // interface is anything
 ```
+
+
+## Package
+
+install a package
+
+```shell
+go get -u golang.org/x/crypto/bcrypt
+```
