@@ -315,3 +315,6 @@ go run -race file.go
 > Mutual exclusion, works like binary lock
 
 - Only one goroutine at a time can acquire the mutex lock and proceed until another goroutine releases the lock.
+
+### Atomic
+- It provides a set of functions that allow for the safe reading, writing, and manipulation of variables without the need to block access with a mutex
