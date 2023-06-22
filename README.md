@@ -297,3 +297,21 @@ wg.Wait() // wait for all functions to be executed
 
 defer wg.Done() // close the process
 ```
+
+
+## Race condition
+> When two or more concurrent processes access a shared resource simultaneously
+
+- To resolve this, it is necessary to create a synchronization to coordinate access to goroutines between shared variables
+
+
+*Check if has a race condition*
+
+```shell
+go run -race file.go
+```
+
+### Mutex
+> Mutual exclusion, works like binary lock
+
+- Only one goroutine at a time can acquire the mutex lock and proceed until another goroutine releases the lock.
