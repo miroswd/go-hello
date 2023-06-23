@@ -318,3 +318,17 @@ go run -race file.go
 
 ### Atomic
 - It provides a set of functions that allow for the safe reading, writing, and manipulation of variables without the need to block access with a mutex
+
+
+## Comma ok
+> ok is used to differentiate the open/closed channel
+
+```go
+    v, ok := <- channel
+
+	fmt.Println(v, ok) // 0, true
+
+	v, ok = <- channel
+
+	fmt.Println(v, ok) // 0, false
+```
