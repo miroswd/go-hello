@@ -332,3 +332,18 @@ go run -race file.go
 
 	fmt.Println(v, ok) // 0, false
 ```
+
+
+## Error handling
+> Not use try/catch
+
+```go
+    v, err := random()
+
+    if err != nil {
+        log.Println(err)
+        return
+    }
+```
+
+*Recommended to use log instead of fmt*
