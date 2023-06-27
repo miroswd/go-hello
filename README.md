@@ -347,3 +347,21 @@ go run -race file.go
 ```
 
 *Recommended to use log instead of fmt*
+
+
+### Recover
+> The recover function interrupts the current panic and returns the value passed to "panic", allowing you to handle the error in a controlled manner.
+
+```go
+func main() {
+    defer func() {
+        if r := recover(); r != nil {
+            fmt.Println("Panic:", r)
+        }
+    }()
+
+    panic("FAILED")
+}
+```
+
+
