@@ -366,7 +366,14 @@ func main() {
 
 
 ## Test
-Need to have `_test.go` at the end of the file
+Need to have `_test.go` at the end of the file and the function must start with *Test* 
+
+```go
+func TestAny(t *testing.T) {
+    // code
+}
+```
+
 
 *Running test* 
 
@@ -379,4 +386,14 @@ go test
 ```shell
 gofmt -w file.go # fix the formatting       
 go fmt -v ./.. # correct formatting of all files
+```
+
+## Benchmark
+> Allow testing code speed or performance
+
+BET: Benchmarks, Examples and Tests
+
+```shell
+go test -bench BenchmarkMultiply
+go test -bench . # running to all files
 ```
