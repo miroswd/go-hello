@@ -373,3 +373,10 @@ Need to have `_test.go` at the end of the file
 ```shell
 go test
 ```
+
+## GoLint
+
+```shell
+gofmt -w file.go # fix the formatting       
+go fmt -v ./.. # correct formatting of all files
+```
