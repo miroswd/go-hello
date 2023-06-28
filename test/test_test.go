@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestSum(t *testing.T) {
 	expected := 6
@@ -55,5 +58,22 @@ func TestSumTable(t *testing.T) {
 
 		}
 	}
+
+}
+
+
+// Test as an example
+
+func ExampleSum(){
+	fmt.Println(sum(3,2,1))
+	fmt.Println(sum(2,2,1))
+	fmt.Println(sum(4,2,1))
+	// Output:
+	// 6
+	// 5
+	// 7
+
+	fmt.Println(sum(3,2,1))
+	// Output: 10
 
 }
