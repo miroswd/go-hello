@@ -365,3 +365,11 @@ func main() {
 ```
 
 
+## Test
+Need to have `_test.go` at the end of the file
+
+*Running test* 
+
+```shell
+go test
+```
